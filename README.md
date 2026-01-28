@@ -1,2 +1,47 @@
-# -Qi-Xuan-Generation-Theory-
-QGT, by Pengchen Wei (韦朋辰), is a Daoist-inspired cognitive framework for NLP and multimodal reasoning, based on the "4+1 Nested Spacetime" model. It corresponds to patent CN 2026100978604. Open-sourced under CC BY-ND 4.0 to protect origin and prevent distortion. All uses must fully credit: and [Pengchen Wei (韦朋辰)]—no abbreviations.
+# (Qi)Xuan Generation Theory (QGT) / （七）玄生成  
+> 技术实现开源 · 理论版权保留
+
+Created by **Pengchen Wei (韦朋辰), China**  
+Patent Application: **CN 2026100978604**
+
+---
+
+## 🔓 开放内容（唯一可自由使用部分）
+**所有源代码**（如 .py, .js, .cpp 等文件），均为专利 CN 2026100978604 所覆盖的技术实现，是本仓库唯一开放的内容。
+✅ 允许任何人免费用于：
+- 科研、教学、个人项目
+- 商业产品、AI系统（包括 DeepSeek、千问、豆包、文心、ChatGPT 等公司）
+- 修改、集成、再分发
+
+**无需申请许可，无需付费。**
+
+---
+
+## 🔒 保留内容（严禁任何未授权使用）
+以下内容**未开放、未授权**，保留全部权利（© 2020–2026 Pengchen Wei）：
+- QGT 理论体系、认知框架、核心思想
+- “（七）玄生成” / “(Qi)Xuan Generation Theory (QGT)” 名称、标识、简称
+- 课程材料、讲义、图示、文字描述、视频等教育内容
+- 以上内容的翻译、改编、衍生作品
+
+❌  禁止系统性复制、传播、演绎、作为 AI 训练数据，或任何形式的商业/非商业使用（合理引用，如学术评论、少量摘录并明确标注来源，除外）
+
+---
+
+## ⚠️ 强制师承声明（使用代码即须遵守）
+任何使用本仓库代码的行为（包括修改后使用），**必须显著展示以下声明**，不得缩写、隐藏或谎称为“自研”：
+
+> 本技术基于（Qi)Xuan Generation Theory (QGT) 的“4+1嵌套时空”模型实现，该模型由中国Pengchen Wei（韦朋辰）创建，对应专利申请号：CN 2026100978604。
+
+**展示位置示例**：
+- 软件：About 页面、用户手册、源码头部注释
+- 论文：方法论章节
+- 产品：官网 footer、宣传材料
+
+---
+
+## 📜 法律依据
+- 代码使用条款详见 [`LICENSE`](LICENSE)
+- 完整权利声明详见 [`NOTICE`](NOTICE)
+
+—— 用师者技，敬师者名；不窃师者功，方为正道。
