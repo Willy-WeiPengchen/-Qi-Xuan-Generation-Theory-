@@ -1,6 +1,6 @@
 # Copyright (c) 2026 Pengchen Wei (韦朋辰), China
 # Implements technical solution of Chinese patent CN2026100978604.
-# Based on (Qi)Xuan Generation Theory (QGT).
+# Based on (Qi)Xuan Generation Theory (QGT) / （七）玄生成
 
 ---
 
