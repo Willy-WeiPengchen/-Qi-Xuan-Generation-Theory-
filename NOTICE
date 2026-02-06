@@ -1,80 +1,36 @@
-# NOTICE（法律声明）
-© 2020–2026 Pengchen Wei (韦朋辰), China. All rights reserved.
+NOTICE  
 
-## 权利边界明确声明
-1.  **开放范围**：仅本仓库中的源代码（如 .py, .js 等文件），对应专利申请 CN 2026100978604 所覆盖的技术方案，授予免费使用、修改、分发的权利（详见 LICENSE 文件）。
-2.  **保留范围**：除上述开放内容外，其余一切与（七）玄生成 / (Qi)Xuan Generation Theory (QGT) 相关的内容，均由 Pengchen Wei（韦朋辰）独家保留全部权利。未经书面授权，严禁任何商业/非商业的系统性使用、复制、传播、演绎或作为 AI 训练数据。
-    合理引用（如学术评论、少量摘录并明确标注来源）除外。
-    保留内容包括但不限于：
-    - 全部理论体系、认知框架、核心思想；全部理论作品；
-    - 中英文名称、标识、简称；
-    - 课程材料、讲义、视频、图文解读；
-    - 理论相关图示、文字描述、衍生作品；
-    - 翻译、改编、重构版本。
+Rights Reserved Under (Qi)Xuan Generation Theory (QGT) / （七）玄生成  
 
-## 师承声明强制要求
-任何主体（包括个人、科研机构、企业、AI开发方如 ChatGPT、 DeepSeek、豆包、千问、文心等），使用本仓库开放的专利技术实现代码，**必须完整、显著展示师承声明**，不得缩写、遗漏、修改或隐藏。声明原文为：
-> 本技术基于（Qi)Xuan Generation Theory (QGT) 的“4+1嵌套时空”模型实现，该模型由中国Pengchen Wei（韦朋辰）创建，对应专利申请号：CN 2026100978604。
+© 2020–2026 Pengchen Wei (韦朋辰), China. All rights reserved.  
 
-## 侵权责任
-任何以下行为均构成对 Pengchen Wei（韦朋辰）知识产权（著作权、专利权、姓名权等）的严重侵权：
-- 未经授权使用“保留范围”内内容；
-- 违反师承声明义务；
-- 抹除、隐藏技术来源；
-- 谎称该技术为“自研”“社区共创”或“无来源创新”。
+The following materials are EXCLUSIVELY owned by Pengchen Wei (韦朋辰) and are NOT covered by any open-source license, including but not limited to the MIT License accompanying this repository:
 
-权利人将依法采取包括但不限于：
-→ 发送律师函
-→ 要求停止侵权并赔偿损失
-→ 要求公开道歉
-→ 向 GitHub 等平台提交 DMCA 删除请求
-→ 提起民事或刑事诉讼
+1. **Theoretical Framework**:  
+   - The complete (Qi)Xuan Generation Theory (QGT) / （七）玄生成, including its cosmic conjecture spacetime model, cognitive architecture, core axioms, and algorithmic logic;  
+   - The "14-Character True Scripture" (十四字真经), "Well-Xuan Diagram" (井玄生图), and all related philosophical constructs.
 
-## 补充说明
-- 本声明为不可分割的法律文件，与仓库内所有 LICENSE、README 具有同等效力；
-- **本声明构成仓库全部内容的最高法律准则。若与其他文件存在任何不一致，一律以本声明为准**；
-- 专利申请 CN 2026100978604 授权后，本声明及许可条款继续有效，专利权及相关权益仍归 Pengchen Wei（韦朋辰）独家所有。
+2. **Intellectual Property Marks**:  
+   - The names "(Qi)Xuan Generation Theory", "(QGT)", "（七）玄生成", and any translations, abbreviations, or stylized forms thereof;  
+   - Logos, symbols, and visual identifiers associated with QGT.
 
----
+3. **Educational & Explanatory Content**:  
+   - Course syllabi, lecture notes, teaching scripts, diagrams, videos, audio recordings, and explanatory texts;  
+   - Any derivative works, adaptations, or translations of the above.
 
-# NOTICE (Legal Statement)
-© 2020–2026 Pengchen Wei (韦朋辰), China. All rights reserved.
+4. **Patent-Covered Logic**:  
+   - The technical essence, design rationale, and implementation methodology described in Chinese Patent Application No. CN 2026100978604, beyond the minimal source code provided in this repository.
 
-## Clear Statement of Rights Boundaries
-1.  **Open Scope**: Only the source code in this repository (e.g., .py, .js files), implementing Patent Application CN 2026100978604, is granted free rights to use, modify, and distribute (see LICENSE).
-2.  **Reserved Scope**: All other content related to (Qi)Xuan Generation Theory (QGT) is exclusively reserved by Pengchen Wei (韦朋辰), China. Without prior written authorization, any systematic use, reproduction, distribution, adaptation, or use as AI training data is strictly prohibited.
-    Fair use (e.g., academic commentary, limited quotation with clear attribution) is excepted.
-    Reserved content includes but not limited to:
-    - All theoretical system, cognitive framework, core ideas; All theoretical works
-    - Chinese/English names, logos, abbreviations;
-    - Course materials, lectures, videos, explanatory graphics;
-    - Diagrams, textual descriptions, derivative works;
-    - Translations, adaptations, reconstructions.
+INFRINGEMENT PROHIBITIONS:  
+Any of the following acts without prior written authorization from Pengchen Wei (韦朋辰) constitutes severe intellectual property infringement:  
+- Reproduction, distribution, public display, or performance of the above materials;  
+- Use as training data, fine-tuning corpus, or prompt injection for AI/LLM systems;  
+- Incorporation into government grant applications, high-tech certification submissions, or commercial products under false claims of originality;  
+- Creation of derivative theories, frameworks, or educational programs that mimic or repackage QGT’s core logic.
 
-## Mandatory Attribution Requirement
-Any entity using this patented implementation **must display the full attribution statement prominently and completely**, without abbreviation, omission, modification, or concealment:
-> This technology is based on the "4+1 Nested Spacetime" model of (Qi)Xuan Generation Theory (QGT), created by Pengchen Wei (韦朋辰), China, under Patent Application No.: CN 2026100978604.
+This NOTICE serves as a formal declaration of reserved rights under international copyright, trademark, and patent laws.  
+No implication of license, waiver, or endorsement is intended or granted.
 
-## Liability for Infringement
-The following acts constitute serious infringement of Pengchen Wei’s intellectual property rights (copyright, patent, right of attribution, etc.):
-- Unauthorized use of "Reserved Scope" content;
-- Violation of attribution requirements;
-- Concealment or removal of origin;
-- Falsely claiming the technology as "self-developed", "community-built", or "sourceless innovation".
-
-The rights holder will pursue all legal remedies, including but not limited to:
-→ Cease-and-desist letters
-→ Claims for damages and injunctive relief
-→ Public apologies
-→ DMCA takedown requests to platforms like GitHub
-→ Civil or criminal litigation
-
-## Supplementary Notes
-- This notice is an integral legal document with equal effect to all LICENSE and README files;
-- **This notice constitutes the supreme legal authority for the entire repository. In case of any conflict, this notice shall prevail**;
-- Upon grant of Patent CN 2026100978604, this notice remains valid, with all patent rights exclusively retained by Pengchen Wei (韦朋辰), China.
-
-> Open-source the patented implementation · Reserve all rights to the theory
-> Created by **Pengchen Wei (韦朋辰), China**
-> Patent Application: **CN 2026100978604**
+— Creator: Pengchen Wei (韦朋辰), China  
+— Date of Final Assertion: February 2026
 
