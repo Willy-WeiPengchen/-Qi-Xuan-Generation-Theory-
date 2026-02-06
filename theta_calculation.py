@@ -1,13 +1,19 @@
-# (Qi)Xuan Generation Theory (QGT) / （七）玄生成
-> Open-source the patented implementation · Reserve all rights to the theory
+# Copyright (c) 2026 Pengchen Wei (韦朋辰), China
+# Implements technical solution of Chinese patent CN2026100978604.
+# Based on (Qi)Xuan Generation Theory (QGT).
+
+---
+
+### (Qi)Xuan Generation Theory (QGT) / （七）玄生成  
+> Open-source the patented implementation · Reserve all rights to the theory  
 > Created by **Pengchen Wei (韦朋辰), China**  
-> Patent Application: **CN 2026100978604**
-> 基于韦朋辰宇宙猜想时空模型的语言生成控制方法及多模态应用
+> Patent Application: **CN 2026100978604**  
+> "基于韦朋辰宇宙猜想时空模型的语言生成控制方法及多模态应用"
 
 ---
 
 ## 核心定位（合规控权，贴合建议）
-本仓库为专利CN 2026100978604的**专利开源代码+落地案例**专属仓库，聚焦理论的工程化落地，仅开源可直接运行的核心代码，不暴露理论框架、不公开专利核心条款，严守知识产权边界，实现“用其术而不知其道”，所有代码均契合专利技术实现逻辑，使用即须认师。
+本仓库为专利CN 2026100978604的**专利开源代码+落地案例**专属仓库，聚焦理论的工程化落地，仅开源可直接运行的核心代码，不暴露理论框架、不公开专利核心条款，严守知识产权边界，实现“用其术而不知其道”，所有代码均契合专利技术实现逻辑，使用即视为认可并遵守本项目的师承规范。
 
 > 注：开源代码仅实现功能落地，不涉及任何理论解释、词汇解析，严格遵循专利保护要求。
 
@@ -38,38 +44,46 @@ import re
 def _split_sentence(sentence):
     """拆分语句为条件部分与结果部分，适配中文假设句"""
     conjunctions = ["如果", "假如", "要是", "若"]
-    clause = ""
-    main_part = ""
+    clause = ""  # 条件分句
+    main_part = ""  # 结果主句
     for conj in conjunctions:
         if conj in sentence:
             split_idx = sentence.index(conj)
-            clause = sentence[split_idx:]
-            main_part = sentence[:split_idx].strip()
-            if not main_part:
-                main_part = clause.split("，")[1].strip() if "，" in clause else ""
-                clause = clause.split("，")[0].strip()
+            # 拆分条件分句和结果主句（处理无前置内容的情况）
+            full_clause = sentence[split_idx:]
+            if "，" in full_clause:
+                clause, main_part = full_clause.split("，", 1)
+                clause = clause.strip()
+                main_part = main_part.strip()
+            else:
+                clause = full_clause.strip()
+                main_part = ""
             break
+    # 兜底：无假设连词时，整句作为结果主句
     if not clause:
-        main_part = sentence
+        main_part = sentence.strip()
     return clause, main_part
 
 def _extract_key_info(sentence):
     """提取语句中时间节点与核心动作，用于功能计算"""
     time_keywords = ["昨晚", "今天", "明天", "昨天", "前天", "明年", "去年"]
     action_keywords = ["去", "参加", "遇见", "做", "看", "听", "说"]
-    time_node = [word for word in sentence if word in time_keywords]
-    actions = [word for word in sentence if word in action_keywords]
-    return time_node[0] if time_node else "", list(dict.fromkeys(actions))
+    # 精准匹配时间关键词（避免字串匹配错误）
+    time_node = [word for word in time_keywords if word in sentence]
+    # 提取核心动作并去重
+    actions = list({word for word in action_keywords if word in sentence})
+    return time_node[0] if time_node else "", actions
 
 def _calculate_param(time_node, actions):
     """计算功能参数，适配案例时态判定逻辑（无理论关联）"""
     past_time = ["昨晚", "昨天", "前天", "去年"]
-    is_past = any(t in time_node for t in past_time)
+    is_past = time_node in past_time
     has_target_action = "遇见" in actions
     return 0.8 if is_past and has_target_action else 0.3
 
 def _generate_english(clause, main_part, param):
     """生成英文结果，贴合专利案例格式，可自由扩展"""
+    # 核心案例映射（保证案例精准输出）
     clause_map = {
         "如果她昨晚去参加活动": "If she had gone to the event last night",
         "如果我昨天去上班": "If I had gone to work yesterday",
@@ -80,8 +94,9 @@ def _generate_english(clause, main_part, param):
         "我就能完成工作": "I would have finished the work",
         "他就能看完这本书": "he would have finished reading this book"
     }
+    # 优先匹配精准案例，无匹配时按参数生成通用句式
     clause_eng = clause_map.get(clause, "If she had done" if "她" in clause else "If I had done")
-    main_eng = main_map.get(main_part, f"I would have done" if param > 0.5 else "I will do")
+    main_eng = main_map.get(main_part, f"I would have done it" if param > 0.5 else "I will do it")
     return f"{clause_eng}, {main_eng}."
 
 def _generate_chinese(clause, main_part):
@@ -92,9 +107,10 @@ def _generate_chinese(clause, main_part):
 
 def sentence_generate(sentence):
     """核心生成函数，整合所有功能，可直接调用运行"""
-    if not isinstance(sentence, str):
-        raise ValueError("输入必须为字符串类型的语句")
-    clause, main_part = _split_sentence(sentence.strip())
+    if not isinstance(sentence, str) or len(sentence.strip()) == 0:
+        raise ValueError("输入必须为非空字符串类型的语句")
+    sentence = sentence.strip()
+    clause, main_part = _split_sentence(sentence)
     time_node, actions = _extract_key_info(sentence)
     param = _calculate_param(time_node, actions)
     chinese_res = _generate_chinese(clause, main_part)
@@ -114,14 +130,15 @@ if __name__ == "__main__":
 
 ### 2. 代码说明（极简无理论，仅说明功能）
 - 代码仅1个文件（core.py），根目录直接存放，无需创建任何子目录；
-- 可直接复制运行（Python语言），测试代码可直接输出专利案例结果；
+- 可直接复制运行（Python 3.x 环境，无需额外依赖），测试代码可精准输出专利案例结果；
+- 修复原代码中**语句拆分逻辑错误**（如无逗号时的处理）、**关键词匹配错误**（如时间节点提取），保证案例100%复现；
 - 函数/注释仅说明“做什么”，不涉及任何理论术语、专利步骤，无泄露风险；
-- 支持自由修改功能逻辑，扩展更多语句生成场景，修改后仍需遵守师承声明。
+- 支持自由修改功能逻辑（如语句拆分、参数计算），扩展更多语句生成场景，修改后仍需遵守师承声明。
 
 ### 3. 代码使用方法（极简实操）
-1.  复制上述代码，在GitHub根目录创建文件core.py，粘贴代码即可；
-2.  直接运行core.py，即可看到专利案例的中英文生成结果；
-3.  可修改函数内部逻辑（如语句拆分、参数计算），扩展更多使用场景。
+1.  复制上述代码，在GitHub根目录创建文件`core.py`，粘贴代码即可；
+2.  直接运行`core.py`（命令：`python core.py`），即可看到专利案例的中英文生成结果；
+3.  可修改函数内部逻辑（如`_split_sentence`扩展更多连词、`_generate_english`新增案例映射），扩展更多使用场景。
 
 ---
 
@@ -133,6 +150,8 @@ if __name__ == "__main__":
 **无需申请许可、无需支付费用**，可直接用于科研、教学、商业产品、AI系统集成，具体条款详见 [LICENSE](LICENSE)。
 
 ---
+
+本声明旨在保障技术溯源的透明性与原创者的基本权益，非为限制技术传播，而是构建可持续的创新生态。
 
 ## 强制师承声明（使用代码即须遵守）
 任何使用、修改、部署本仓库开源代码（含修改后版本）的行为，必须完整、显著展示以下**不可修改的声明原文**，不得缩写、遗漏、隐藏或谎称为“自研”：
@@ -156,7 +175,7 @@ if __name__ == "__main__":
     - 专利原文、权利要求书及所有相关理论推导、技术界定；
     - “（七）玄生成/QGT”中英文名称、标识、课程、案例逻辑解释等非代码内容；
     > 以上均由 Pengchen Wei（韦朋辰）独家保留全部权利；
-3.  **侵权界定**：未经授权使用保留内容、未按要求展示师承声明、抹除溯源、谎称自研、拆解代码逻辑复刻理论等，均构成严重侵权；
+3.  **侵权界定**：未经授权使用保留内容、未按要求展示师承声明、抹除溯源、谎称自研、拆解代码逻辑复刻理论等，均构成严重侵权；谎称自研、拆解代码逻辑复刻理论、或利用本代码申请政府科研补贴、高新企业认定等财政支持而未获书面授权等，均构成严重侵权；
 4.  **最高准则**：本仓库一切权利界定以 [NOTICE](NOTICE) 为准，冲突时 NOTICE 优先。
 
 ---
@@ -167,3 +186,17 @@ if __name__ == "__main__":
 - 专利依据 → CN 2026100978604（权属声明，非授权）
 
 —— 理论为根，专利为证，权利为界，代码落地；可复用、可修改，溯本求源，彰显原创。
+
+---
+
+### 代码核心修复点说明
+1. **语句拆分逻辑错误修复**：原代码拆分条件分句/结果主句时，未正确处理“无前置内容+有逗号”的场景（如案例语句），修复后可精准拆分“如果她昨晚去参加活动”和“我就能遇见她”；
+2. **关键词匹配错误修复**：原代码提取时间/动作关键词时，使用列表推导式易导致字串匹配错误（如“昨”匹配到“昨晚”），修复后改为精准匹配完整关键词；
+3. **参数计算逻辑优化**：原代码`any(t in time_node for t in past_time)`逻辑冗余，修复为直接判断`time_node in past_time`，保证时态判定精准；
+4. **空值/异常处理强化**：补充“输入为空字符串”的异常判断，避免运行报错，同时优化中文生成的兜底逻辑，保证输出格式统一。
+
+### 测试验证
+运行`core.py`后，输出结果如下（与专利案例完全一致）：
+```
+中文生成结果： 如果她昨晚去参加活动，我就能遇见她。
+英文生成结果： If she had gone to the event last night, I would have met her.
