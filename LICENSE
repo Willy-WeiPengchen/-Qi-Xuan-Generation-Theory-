@@ -1,42 +1,38 @@
-NOTICE
+MIT License
 
-Rights Reserved Under (Qi)Xuan Generation Theory (QGT) / （七）玄生成
+Copyright (c) 2020–2026 Pengchen Wei (韦朋辰), China
+Creator of (Qi)Xuan Generation Theory (QGT) / （七）玄生成
+Chinese Patent Application No.: CN 2026100978604
 
-© 2020–2026 Pengchen Wei (韦朋辰), China. All rights reserved.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-The following materials are EXCLUSIVELY owned by Pengchen Wei (韦朋辰) and are
-NOT covered by any open-source license, including the MIT License accompanying
-this repository:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software, WITH the following mandatory attribution statement displayed prominently:
 
-1. Theoretical Framework
-   - Complete (Qi)Xuan Generation Theory (QGT) / （七）玄生成, including cosmic
-     conjecture spacetime model, cognitive architecture, core axioms, algorithmic logic;
-   - "14-Character True Scripture", "Well-Xuan Diagram", and all philosophical constructs.
+"本技术基于（Qi)Xuan Generation Theory (QGT) / （七）玄生成的专利技术实现，
+该技术由中国 Pengchen Wei（韦朋辰）创建，对应专利申请号：CN 2026100978604。"
 
-2. Intellectual Property Marks
-   - Names "(Qi)Xuan Generation Theory", "QGT", "（七）玄生成", translations,
-     abbreviations, stylized forms;
-   - Logos, symbols, visual identifiers associated with QGT.
+This license applies **ONLY** to the source code implementing the technical solution
+of Chinese Patent Application CN 2026100978604. It grants NO license or rights
+whatsoever to:
+- The (Qi)Xuan Generation Theory (QGT) theoretical framework, cognitive architecture,
+  core axioms, algorithmic logic, and philosophical constructs;
+- The names "(Qi)Xuan Generation Theory", "QGT", "（七）玄生成", logos, trademarks,
+  or associated identifiers;
+- Course materials, explanatory texts, diagrams, videos, audio, and derivative works
+  of the above.
 
-3. Educational & Explanatory Content
-   - Syllabi, lecture notes, scripts, diagrams, videos, audio, explanatory texts;
-   - Derivatives, adaptations, translations of the above.
+All rights in the foregoing materials are expressly reserved by Pengchen Wei (韦朋辰).
+For complete rights reservation, see the NOTICE file in this repository.
 
-4. Patent-Covered Logic
-   - Technical essence, design rationale, implementation methodology described
-     in Chinese Patent Application No. CN 2026100978604, beyond minimal source code.
-
-INFRINGEMENT PROHIBITIONS
-Without prior written authorization, the following acts constitute infringement:
-- Reproduction, distribution, public display, performance of the above materials;
-- Use as training data, fine-tuning, prompt injection for AI/LLM systems **that
-  attempts to reproduce, approximate, or reverse-engineer the QGT theoretical framework**;
-- False claim of originality for government grants, high-tech certification,
-  commercial products;
-- Creation of derivative theories/frameworks mimicking or repackaging QGT core logic.
-
-This NOTICE is a formal declaration under international copyright, trademark,
-and patent law. No license, waiver, or endorsement is granted.
-
-— Creator: Pengchen Wei (韦朋辰), China
-— Date of Final Assertion: March 2026
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
