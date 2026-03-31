@@ -1,44 +1,42 @@
-MIT License
+NOTICE
 
-Copyright (c) 2020–2026 Pengchen Wei (韦朋辰), China  
-Creator of (Qi)Xuan Generation Theory (QGT) / （七）玄生成  
-Chinese Patent Application No.: CN 2026100978604  
+Rights Reserved Under (Qi)Xuan Generation Theory (QGT) / （七）玄生成
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+© 2020–2026 Pengchen Wei (韦朋辰), China. All rights reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions thereof.
+The following materials are EXCLUSIVELY owned by Pengchen Wei (韦朋辰) and are
+NOT covered by any open-source license, including the MIT License accompanying
+this repository:
 
-ADDITIONAL CONDITIONS:
-1. Any public use, distribution, or deployment of this Software (including modified
-   versions) must prominently display the following attribution statement in a
-   clearly visible location:
+1. Theoretical Framework
+   - Complete (Qi)Xuan Generation Theory (QGT) / （七）玄生成, including cosmic
+     conjecture spacetime model, cognitive architecture, core axioms, algorithmic logic;
+   - "14-Character True Scripture", "Well-Xuan Diagram", and all philosophical constructs.
 
-      "本技术基于（Qi)Xuan Generation Theory (QGT) / （七）玄生成的专利技术实现，
-       该技术由中国 Pengchen Wei（韦朋辰）创建，对应专利申请号：CN 2026100978604。"
+2. Intellectual Property Marks
+   - Names "(Qi)Xuan Generation Theory", "QGT", "（七）玄生成", translations,
+     abbreviations, stylized forms;
+   - Logos, symbols, visual identifiers associated with QGT.
 
-2. The Software shall NOT be used for:
-   - Applying for government grants, subsidies, high-tech enterprise certification,
-     or any form of public fiscal support;
-   - Training, fine-tuning, distillation, or prompt engineering of AI/LLM models.
+3. Educational & Explanatory Content
+   - Syllabi, lecture notes, scripts, diagrams, videos, audio, explanatory texts;
+   - Derivatives, adaptations, translations of the above.
 
-This license applies ONLY to the source code implementing the technical solution
-covered by Chinese Patent Application CN 2026100978604. It grants NO rights to:
-- The (Qi)Xuan Generation Theory (QGT) theoretical framework, cognitive model, or core logic;
-- The names "(Qi)Xuan Generation Theory", "（七）玄生成", or any related trademarks;
-- Course materials, diagrams, explanatory texts, videos, or derivative educational content.
+4. Patent-Covered Logic
+   - Technical essence, design rationale, implementation methodology described
+     in Chinese Patent Application No. CN 2026100978604, beyond minimal source code.
 
-All such rights are expressly reserved by Pengchen Wei (韦朋辰), China.
+INFRINGEMENT PROHIBITIONS
+Without prior written authorization, the following acts constitute infringement:
+- Reproduction, distribution, public display, performance of the above materials;
+- Use as training data, fine-tuning, prompt injection for AI/LLM systems **that
+  attempts to reproduce, approximate, or reverse-engineer the QGT theoretical framework**;
+- False claim of originality for government grants, high-tech certification,
+  commercial products;
+- Creation of derivative theories/frameworks mimicking or repackaging QGT core logic.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This NOTICE is a formal declaration under international copyright, trademark,
+and patent law. No license, waiver, or endorsement is granted.
+
+— Creator: Pengchen Wei (韦朋辰), China
+— Date of Final Assertion: March 2026
